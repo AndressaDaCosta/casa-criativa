@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
    <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="./img/home.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
 </p>
 
@@ -8,7 +8,7 @@
 
 <p align="center">
    <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="./img/ideias.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
-</p>
+</p> -->
 
 <h1 align="center">WorkShop Rocketseat</h1> 
 <blockquote align="center"> É uma semana prática com muito código, desafios e networking desenvolvido pela RocketSeat.</blockquote>
@@ -69,7 +69,7 @@ npm run start
 
 ✅ HTML 5 <br>
 ✅ CSS 3<br>
-✅ JavaScipt
+✅ JavaScript
 
 
 ## <a id="licenca"></a> 🍏 Licença
