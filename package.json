@@ -1,5 +1,25 @@
 {
+  "name": "casa-criativa",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">    <a target=\"_blank\" rel=\"casa criativa\" href=\"https://github.com/Rocketseat\"><img src=\"./img/home.png\" width=\"100%\" style=\"max-width:100%;margin-top:30px;\"></a><br> </p>",
+  "main": "app_home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndressaDaCosta/casa-criativa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndressaDaCosta/casa-criativa/issues"
+  },
+  "homepage": "https://github.com/AndressaDaCosta/casa-criativa#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
   }
 }
