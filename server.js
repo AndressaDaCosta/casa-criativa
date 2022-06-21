@@ -5,8 +5,11 @@ const server = express()
 //criando a rota  /
 // capturando o pedido para o cliente para  responder "/"
 server.get('/', function (req, res) {
-  return res.send('Hello Word!Rocketseat')
+  return res.sendFile(__dirname + "/index.html")
 })
+
+
+
 
 //console.log(server)
 //ligando a porta do servidor
@@ -18,7 +21,7 @@ var express = require('express'),
    
    
 
-    
+
 server.use(express.logger());
 
 server.get('/', function(req, res){
