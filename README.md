@@ -1,13 +1,13 @@
 <p align="center">
-   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="./img/home.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
+   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="/img/home.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
 </p>
 
 <p align="center">
-   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="./img/cadastro.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
+   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="/img/cadastro.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
 </p>
 
 <p align="center">
-   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="./img/ideias.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
+   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="/img/ideias.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
 </p>
 
 <h1 align="center">WorkShop Rocketseat</h1> 
@@ -79,5 +79,5 @@ Released in 2020. This project is under the [MIT license](https://nodejs.org/en/
 <br>
 🚀 Mentoria Mayk Brito!! 
 
-(PARTE 1 ) Continua... 🚀🚀
+(PARTE 4) Continua... 🚀🚀
  
