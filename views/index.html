@@ -7,15 +7,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="short icon" href="./img/house.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="short icon" href="/img/house.png" type="image/x-icon" />
     <title>Casa Criativa</title>
   </head>
   <body>
+    <!-- <h1>{{title}}</h1> -->
+
     <div id="container">
       <section id="intro">
         <header>
-          <img src="./img/logo.png" alt="casa Criativa" />
+          <img src="/img/logo.png" alt="casa Criativa" />
         </header>
         <!--Conteudo principal -->
         <main>
@@ -36,7 +38,7 @@
 
         <section id="buttons">
           <button onclick="onOff()">+ Adicionar ideia</button>
-          <a href="ideias.html" class="button">Ver ideias</a>
+          <a href="/ideias" class="button">Ver ideias</a>
         </section>
 
         <footer>
@@ -115,26 +117,31 @@
         <form action="">
           <div class="input-wraper">
             <label for="title">Título da Ideia</label>
-            <input type="text" name="title" />
+            <input placeholder="..." type="text" name="title" />
           </div>
 
           <div class="input-wraper">
             <label for="category">Categoria</label>
-            <input type="text" name="category" />
+            <input placeholder="..." type="text" name="category" />
           </div>
           <div class="input-wraper">
             <label for="image">Link da imagem</label>
-            <input type="url" name="image" />
+            <input placeholder="..." type="url" name="image" />
           </div>
           <div class="input-wraper">
             <label for="description"
               >Digite uma descrição para essa ideia</label
             >
-            <textarea name="description" cols="30" rows="10"></textarea>
+            <textarea
+              placeholder="..."
+              name="description"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
           <div class="input-wraper">
             <label for="link">Link da Ideia</label>
-            <input type="text" name="link" />
+            <input placeholder="..." type="text" name="link" />
           </div>
 
           <a href="#" onclick="onOff()">Voltar</a>
@@ -143,6 +150,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
