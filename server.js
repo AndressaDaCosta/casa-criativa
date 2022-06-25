@@ -49,7 +49,7 @@ nunjucks.configure('views', {
 })
 
 server.get('/', function (req, res) {
-    return res.render('index.html')
+    return res.render('index.html' , { ideas})
   })
 
 server.get('/ideias', function (req, res) {
