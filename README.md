@@ -1,83 +1,71 @@
-<p align="center">
-   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="/img/home.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
-</p>
+<h1 align="center">
+  <img src="public/img/logo.png">
+</h1>
 
-<p align="center">
-   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="/img/cadastro.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
-</p>
+<h2 align="center">
+  Sistema de cadastro de ideias para tornar o momento
+  <br>
+  de confinamento pelo Covid-19 mais interessante
+</h2>
 
-<p align="center">
-   <a target="_blank" rel="casa criativa" href="https://github.com/Rocketseat"><img src="/img/ideias.png" width="100%" style="max-width:100%;margin-top:30px;"></a><br>
-</p>
+<h3>
+  Front-end
+</h3>
 
-<h1 align="center">WorkShop Rocketseat</h1> 
-<blockquote align="center"> É uma semana prática com muito código, desafios e networking desenvolvido pela RocketSeat.</blockquote>
-</p>
+<ul>
+  <li> <img src="public/img/html.png" alt="html5" height="18"> <strong> HTML5 </strong> </li>
+  <li> <img src="public/img/css.png" alt="css3" height="18"> <strong> CSS3 </strong> </li>
+  <li> <img src="public/img/js.png" alt="js" height="18"> <strong> JavaScript </strong> </li>
+</ul>
 
+<h3>
+  Back-end
+</h3>
 
-## 💚 Guia de conteúdo
+<ul>
+  <li> <img src="public/img/node.png" alt="node.js" height="18"> <strong> Node.js </strong> </li>
+  <li> <img src="public/img/sqlite.png" alt="sqlite3" height="18"> <strong> SQLite 3 </strong> </li>
+</ul>
 
-<li><a href="#recursos">Recursos</a></li><br>
-<li><a href="#instalacao">Instalação</a></li><br>
-<li><a href="#como-comecar">Como começar?</a></li><br>
-<li><a href="#faq">FAQ</a></li><br>
-<li><a href="#licenca">Licença</a></li><br>
+<h3>
+  Dependências
+</h3>
 
-## <a id="recursos"></a>♻️ Recursos
+<ul>
+  <li> <strong> Express </strong> </li>
+  <li> <strong> Nodemon </strong> </li>
+  <li> <strong> Nunjucks </strong> </li>
+  <li> <strong> Sqlite3 </strong> </li>
+</ul>
 
-✅ Você pode conhecer o projeto Casa Criativa, vendo o que outras pessoas já fizeram.<br>
+### Para rodar a aplicação
 
-✅ Irá poder cadastrar suas ideias para  e ver o que outras pessoas estão fazendo.<br>
+Clone esse repositório e dentro da pasta criada execute `npm install`, para instalar as dependências.
 
-## <a id="instalacao"></a> 🚧 Instalação
+Rode `npm run dev`.
 
-Verifique se você possui o [Node.js](https://nodejs.org/en/download/) instalado, pois ele contém o <b>npm</b>, necessário para instalar dependências, iniciar os scripts apropriados e gerar a build do projeto.
+Acesse a aplicação via **localhost:3000**
 
-Clone o repositório:
-````
-git clone https://github.com/jucelania/casa-criativa-frontend
-````
-Instale as dependências necessárias para este projeto:
+### Telas
 
-````
-npm install
-````
+![](img/home.png)
+![](img/cadastro.png)
+![](img/ideias.png)
 
-Os arquivos da build podem ser gerados da seguinte maneira:
+Veja também esse [vídeo](https://youtu.be/vV-hAM5sYjo) com a demonstração da aplicação rodando localmente.
 
-````
-npm run build
-````
-## <a id="como-comecar"></a> 🏁 Como começar?
+---
 
-<b> Executando o projeto</b>
+**&copy; <img src="imgs/rocketseat.svg" alt="rocketseat" height="20"> [Rocketseat](https://rocketseat.com.br/)**
 
-Inicie o ambiente de desenvolvimento, em seguida,  navegue em um navegador para o endereço (http: // localhost: 8080):
+**Instrutor: [Mayk Brito](https://github.com/maykbrito)**
 
-````
-npm run start
-````
-## <a id="faq"></a> 💬 FAQ
+## Licença
 
-<b>Pergunta:</b> Sobre o que é o projeto?
+[MIT](LICENSE)
 
-<b>Resposta:</b>  É uma semana prática com muito código, desafios e networking desenvolvido pela RocketSeat. Casa Criativa é um projeto dedicado para que as pessoas possam compartilhar o que estão fazendo em casa durante esse momento de quarentena, com o objetivo de ajudar as pessoas a se comunicarem, compartilhar o que estão fazendo para se distrair e assim ajudar outras pessoas.
+<hr>
 
-<b>Pergunta:</b> Quais são as tecnologias usadas neste projeto?
-
-<b>Resposta:</b> As tecnologias usadas neste projeto são...
-
-✅ HTML 5 <br>
-✅ CSS 3<br>
-✅ JavaScript
-
-
-## <a id="licenca"></a> 🍏 Licença
-
-Released in 2020. This project is under the [MIT license](https://nodejs.org/en/download/) 
-<br>
-<br>
-🚀 Mentoria Mayk Brito!! 
-
-(PARTE 4) Continua... 🚀🚀
- 
+<h4 align="center">
+  <em>&lt;/&gt;</em> by <a href="https://github.com/AndressaDaCosta" target="_blank">AndressaCosta</a>
+  </h4>
