@@ -122,7 +122,7 @@ server.post('/', function (req, res) {
 })
 
 //liguei meu servidor na porta 3001
-server.listen(3001)
+server.listen(3000)
 
 // server.get('/', function (req, res) {
 //   const h1 = 'OI DO BACK END'
