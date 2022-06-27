@@ -52,11 +52,10 @@ Acesse a aplicação via **localhost:3000**
 ![](img/cadastro.png)
 ![](img/ideias.png)
 
-Veja também esse [vídeo](https://youtu.be/vV-hAM5sYjo) com a demonstração da aplicação rodando localmente.
 
 ---
 
-**&copy; <img src="imgs/rocketseat.svg" alt="rocketseat" height="20"> [Rocketseat](https://rocketseat.com.br/)**
+**&copy; <img src="img/rocketseat.svg" alt="rocketseat" height="20"> [Rocketseat](https://rocketseat.com.br/)**
 
 **Instrutor: [Mayk Brito](https://github.com/maykbrito)**
 
