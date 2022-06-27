@@ -63,3 +63,46 @@ router.post('/', (req, res) => {
 })
 
 module.exports = router
+
+/* const ideas = [
+//   {
+//     img: "https://cdn-icons.flaticon.com/png/512/3270/premium/3270999.png?token=exp=1656097782~hmac=69e5844c9b491c44304b103005d78d8a" ,
+//     title: "Cursos de Programação" ,
+//     category: "Estudo",
+//     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." ,
+//     url: "https://rocketseat.com.br"
+//   },
+
+//   {
+//     img: "https://cdn-icons-png.flaticon.com/512/1198/1198314.png" ,
+//     title: "Exercícios" ,
+//     category: "Saúde",
+//     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." ,
+//     url: "https://rocketseat.com.br"
+//   },
+
+//   {
+//     img: "https://cdn-icons-png.flaticon.com/512/2647/2647573.png" ,
+//     title: "Meditação" ,
+//     category: "Mentalidade",
+//     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." ,
+//     url: "https://rocketseat.com.br"
+//   },
+
+//   {
+//     img: "https://cdn-icons.flaticon.com/png/512/3270/premium/3270999.png?token=exp=1656097782~hmac=69e5844c9b491c44304b103005d78d8a" ,
+//     title: "Karaokê" ,
+//     category: "Diverção em Família",
+//     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." ,
+//     url: "https://rocketseat.com.br"
+//   }
+   
+// ]
+
+
+
+
+
+
+
+*/
