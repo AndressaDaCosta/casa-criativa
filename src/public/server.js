@@ -49,16 +49,26 @@ const db = require('./db')
 */
 
 // configurar arquivos estáticos (css,scripts, imagens)
-server.use(express.static('public'))
+server.use(express.static('src/public'))
 
+// habilitando req.body 
 server.use(express.urlencoded({ extended: true }))
 
 // configuração do nunjucks
 const nunjucks = require('nunjucks')
-nunjucks.configure('views', {
+nunjucks.configure('src/public/views', {
   express: server,
   noCache: true //boolean
 })
+
+// configurando as rotas
+server.use(require('./routes'))
+
+//liguei meu servidor na porta 3001
+server.listen(3001, () => console.log('> Servidor rodando na porta: 3001'))
+
+
+
 
 server.get('/', function (req, res) {
   db.all(`SELECT * FROM ideas`, function (err, rows) {
@@ -121,8 +131,8 @@ server.post('/', function (req, res) {
   })
 })
 
-//liguei meu servidor na porta 3001
-server.listen(3000)
+
+
 
 // server.get('/', function (req, res) {
 //   const h1 = 'OI DO BACK END'

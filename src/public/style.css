@@ -1,12 +1,14 @@
+html,
 body {
-  background-color: #e5e5e5;
-  color: #25282b;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-body.hideScroll {
-  overflow: hidden;
+body {
+  background: #e5e5e5;
+  color: #25282b;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -14,7 +16,7 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
-/*  */
+
 a:hover {
   text-decoration: underline;
 }
@@ -26,27 +28,8 @@ p,
   letter-spacing: 0.1px;
 }
 
-.button {
-  color: white;
-  background-color: #ff5e84;
-  width: 150px;
-  height: 40px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 8px 8px 16px #ff5e8432;
-}
-
-.button:hover {
-  background-color: #0984e3;
-  text-decoration: none;
-}
-
 #container {
-  width: 80%;
+  width: 90%;
   max-width: 980px;
   margin: 40px auto;
   display: flex;
@@ -54,7 +37,7 @@ p,
 
 #intro {
   width: 300px;
-  margin-right: 64px;
+  margin-right: 50px;
 }
 
 main {
@@ -62,25 +45,41 @@ main {
 }
 
 #buttons {
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 32px;
 }
 
 button {
-  background: none;
-  color: #ff5e84;
   border: none;
+  background: none;
   font-size: 14px;
   font-weight: bold;
-  line-height: 18px;
-  letter-spacing: 0.2px;
+  line-height: 0.2px;
+  color: #ff5e84;
   cursor: pointer;
   outline: none;
 }
 
 button:hover {
   text-decoration: underline;
+}
+
+.button {
+  color: white;
+  background: #ff5e84;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 16px -7px rgba(255, 0, 92, 1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  text-decoration: none;
 }
 
 footer {
@@ -96,13 +95,15 @@ footer a {
   opacity: 0.7;
 }
 
+/* --------------------------- card ideia --------------------------- */
+
 .idea {
   display: flex;
-  box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
-  border-radius: 8px;
   background-color: #fff;
-  padding: 32px;
-  margin-bottom: 32px;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.3);
+  margin-bottom: 26px;
 }
 
 .idea img {
@@ -124,25 +125,21 @@ footer a {
   margin: 16px 0;
 }
 
+/* --------------------------- MODAL --------------------------- */
+
 #modal {
-  background-color: #ff5e84;
-  position: fixed;
+  background: #ff5e84;
+  position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
   transition: 400ms;
 }
 
-#modal.addScroll {
-  overflow: auto;
-}
-
 #modal .content {
-  margin-top: 15%;
   color: white;
 }
 
@@ -154,10 +151,10 @@ footer a {
 #modal form {
   width: 80%;
   max-width: 800px;
-  margin: 0 auto 15%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 8px 20px;
 }
 
 .content form div:nth-child(3),
@@ -170,11 +167,10 @@ form input,
 form textarea {
   width: 100%;
   padding: 12px;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 1px solid rgba(141, 25, 52, 0.5);
+  border-radius: 7px;
+  border: 1px solid rgba(168, 53, 80, 0.2);
   outline: none;
-  font-size: 16px;
+  box-sizing: border-box;
 }
 
 form label {
@@ -186,33 +182,33 @@ form label {
 form a {
   width: 150px;
   height: 40px;
-  background-color: #e9668a;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #ffffff22;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 6px;
   align-self: end;
   transition: 400ms;
 }
 
 form a:hover {
-  background-color: #fff;
+  background: #fff;
   color: #ff5e84;
   text-decoration: none;
 }
 
 form button {
-  background-color: white;
+  background: white;
   width: 150px;
   height: 40px;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 32px;
   grid-column: 2;
   justify-self: end;
+  margin-top: 22px;
   transition: 400ms;
 }
 
@@ -226,6 +222,8 @@ form button:hover {
   opacity: 0;
   visibility: hidden;
 }
+
+/* --------------------------- PAGE IDEAS --------------------------- */
 
 #page-ideas #container {
   display: block;
@@ -242,32 +240,48 @@ form button:hover {
 }
 
 #page-ideas nav li {
-  list-style: none;
-  margin-right: 16px;
+  list-style-type: none;
+  margin-left: 20px;
 }
 
 #page-ideas nav li a {
   color: #25282b;
 }
 
-#page-ideas nav li a.button {
+#page-ideas nav li:last-child a {
   color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+  background-color: #ff5e84;
+  box-shadow: 0px 4px 16px -7px rgba(255, 0, 92, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 400ms;
 }
 
-#page-ideas nav li:last-child {
-  margin: 0;
+#page-ideas nav li:last-child a:hover {
+  background-color: rgb(9, 132, 227);
+  box-shadow: 0px 4px 16px -7px rgb(5, 98, 168);
 }
 
-section#title {
+/* ----------- Section ----------- */
+
+#page-ideas section#title {
   text-align: center;
+  margin: 64px 0;
 }
 
-section#title p {
+#page-ideas section#title p {
   opacity: 0.7;
   margin: 0;
 }
 
-section#title h1 {
+#page-ideas section#title h1 {
   margin: 0;
   font-size: 28px;
 }
@@ -282,8 +296,6 @@ section#ideas .idea {
   margin: 0;
 }
 
-section#title,
-section#ideas,
-footer {
+#page-ideas div footer {
   margin-top: 64px;
 }
