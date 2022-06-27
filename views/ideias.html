@@ -1,42 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.html" %} {% set bodyId = "page-ideas" %} {% block title %}
+<title>Ideias - Casa Criativa</title>
+{% endblock %} {% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="short icon" href="./img/house.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-    <title>Ideias - Casa Criativa</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
+<header>
+  <a href="/">
+    <img src="/logo.png" alt="logo casa criativa" />
+  </a>
 
-<body id="page-ideas">
-   
-    <div id="container">
-        <header>
-            <a href="/">
-                <img src="/img/logo.png" alt="logo casa criativa">
-            </a>
+  <!--Menu-->
+  <nav>
+    <li><a href="/">Inicio</a></li>
+    <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+  </nav>
+</header>
 
-            <!--Menu-->
-            <nav>
-                
-                <li><a href="/">Inicio</a></li>
-                <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
-            </nav>
-    
-        </header>
-    
-        <section id="title">
-            <p>em exibição</p>
-            <h1>Ideias</h1>
-        </section>
-    
-        <main>
+<section id="title">
+  <p>em exibição</p>
+  <h1>Ideias</h1>
+</section>
+
+<main>
+  <section id="ideas">{% include "allideas.html" %}</section>
+</main>
+
+<!-- <main>
             <section id="ideas">          
                 <div class="idea">
-                    <img src="https://cdn-icons.flaticon.com/png/512/3270/premium/3270999.png?token=exp=1656097782~hmac=69e5844c9b491c44304b103005d78d8a" alt="estudo" width="10%" height="10%">
+                    <img src="https://cdn-icons.flaticon.com/png/512/3270/premium/3270999.png?token=exp=1656290862~hmac=7bffe6a3c5aa824369ea8a1ef949776a" alt="estudo" width="10%" height="10%">
                     <div class="content">
                         <h3>Cursos de Programação</h3>
                         <p>Estudo</p>
@@ -104,13 +94,19 @@
                     </section>
         </div>
             
-        </main>
-        <footer>Com 💖 <a href="https://www.linkedin.com/in/andressa-da-costa/"
-            target="blank">Andressa Costa Developer</a>
-        </footer>
-    </div>
+        </main> -->
 
-     <!--Modal-->
+<footer>
+  Com 💖
+  <a href="https://www.linkedin.com/in/andressa-da-costa/" target="blank"
+    >Andressa Costa Developer</a
+  >
+</footer>
+
+{% endblock %}
+
+<!-- 
+     Modal
      <div id="modal" class="hide">
         <div class="content">
             <h1>Nova Ideia</h1>
@@ -148,4 +144,4 @@
      <script src="/script.js"></script>
 
     </body>
-</html>
+</html> -->

@@ -54,8 +54,8 @@ server.use(express.static('public'))
 server.use(express.urlencoded({ extended: true }))
 
 // configuração do nunjucks
-const nunjucks = require('nunjucks')
-nunjucks.configure('views', {
+const nunjucks = require("nunjucks")
+nunjucks.configure("views", {
   express: server,
   noCache: true //boolean
 })

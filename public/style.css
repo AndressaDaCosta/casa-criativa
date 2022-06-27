@@ -1,12 +1,12 @@
 body {
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   color: #25282b;
-  /* text-align: justify;*/
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
+
 body.hideScroll {
-  overflow: hidden; /*tira as rolagens*/
+  overflow: hidden;
 }
 
 a {
@@ -19,18 +19,36 @@ a:hover {
   text-decoration: underline;
 }
 
-.p,
+p,
 .description {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1px;
 }
 
-#container {
-  max-width: 980px;
-  width: 90%;
-  margin: 40px auto;
+.button {
+  color: white;
+  background-color: #ff5e84;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 8px 16px #ff5e8432;
+}
 
+.button:hover {
+  background-color: #0984e3;
+  text-decoration: none;
+}
+
+#container {
+  width: 80%;
+  max-width: 980px;
+  margin: 40px auto;
   display: flex;
 }
 
@@ -50,89 +68,73 @@ main {
 }
 
 button {
-  border: none;
-  color: #ff5e84;
-  font-weight: bold;
-
   background: none;
-  cursor: pointer;
-  outline: none;
-
+  color: #ff5e84;
+  border: none;
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
   letter-spacing: 0.2px;
+  cursor: pointer;
+  outline: none;
 }
 
 button:hover {
   text-decoration: underline;
 }
 
-#buttons,
 footer {
   text-align: center;
-}
-
-footer {
-  text-align: center;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.2px;
-  text-decoration: none;
-  color: #7777;
+  color: #777;
 }
 
 footer a {
   opacity: 0.7;
-  color: #25282b;
-  text-decoration: none;
-}
-
-footer:hover {
-  color: #ff5e84;
-  font-weight: bold;
 }
 
 .idea {
   display: flex;
-  margin-bottom: 32px;
+  box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
-  padding: 20px;
+  padding: 32px;
+  margin-bottom: 32px;
 }
-.idea img {
-  height: 60px;
-  width: 60px;
 
+.idea img {
+  width: 60px;
+  height: 60px;
   margin-right: 32px;
 }
+
 .idea h3 {
   margin: 0;
 }
+
 .idea p {
   margin: 8px 0;
-  color: #7777;
+  color: #777;
 }
+
 .idea .description {
   margin: 16px 0;
 }
 
-/*Modal*/
 #modal {
-  background: #ff5e84;
+  background-color: #ff5e84;
   position: fixed;
-
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 400ms;
 }
 
 #modal.addScroll {
@@ -140,7 +142,7 @@ footer:hover {
 }
 
 #modal .content {
-  margin-top: 5%;
+  margin-top: 15%;
   color: white;
 }
 
@@ -150,51 +152,29 @@ footer:hover {
 }
 
 #modal form {
-  max-width: 800px;
   width: 80%;
-
-  margin: 0 auto 20%;
-
+  max-width: 800px;
+  margin: 0 auto 15%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-/*agrupamento de ideias-pseudo elemento (pega o elemento de dentro do form*/
+
 .content form div:nth-child(3),
 .content form div:nth-child(4),
 .content form div:nth-child(5) {
   grid-column: span 2;
 }
 
-form a {
-  width: 150px;
-  height: 40px;
-  background-color: #ffffff22;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  border-radius: 6px;
-  align-self: end;
-  font-weight: bold;
-  transition: all 400ms;
-}
-form a:hover {
-  background: #fff;
-  color: #ff5e84;
-  text-decoration: none;
-}
 form input,
 form textarea {
   width: 100%;
   padding: 12px;
+  box-sizing: border-box;
   border-radius: 6px;
   border: 1px solid rgba(141, 25, 52, 0.5);
-
-  box-sizing: border-box;
-  font-size: 19px;
   outline: none;
+  font-size: 16px;
 }
 
 form label {
@@ -202,49 +182,68 @@ form label {
   line-height: 32px;
   letter-spacing: 0.8px;
 }
+
+form a {
+  width: 150px;
+  height: 40px;
+  background-color: #e9668a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  align-self: end;
+  transition: 400ms;
+}
+
+form a:hover {
+  background-color: #fff;
+  color: #ff5e84;
+  text-decoration: none;
+}
+
 form button {
-  background: white;
+  background-color: white;
   width: 150px;
   height: 40px;
   border-radius: 6px;
   cursor: pointer;
-
   margin-top: 32px;
   grid-column: 2;
   justify-self: end;
+  transition: 400ms;
 }
 
 form button:hover {
   background-color: #0984e3;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 #modal.hide {
-  display: none;
   opacity: 0;
-  visibility: hidden; /*mostra a sobre pagina sem dar conflito*/
+  visibility: hidden;
 }
-
-#modal.hide {
-  display: none;
-}
-/*Ideia-html*/
 
 #page-ideas #container {
   display: block;
 }
-header {
+
+#page-ideas header {
   display: flex;
   justify-content: space-between;
 }
+
 #page-ideas nav {
   display: flex;
   align-items: center;
 }
+
 #page-ideas nav li {
-  list-style-type: none; /*marcações de º do menu*/
-  margin-right: 14px;
+  list-style: none;
+  margin-right: 16px;
 }
 
 #page-ideas nav li a {
@@ -252,73 +251,22 @@ header {
 }
 
 #page-ideas nav li a.button {
-  color: #ff5e84;
+  color: white;
 }
 
 #page-ideas nav li:last-child {
-  /* last-child pega o elemento do  ultimo do menu */
   margin: 0;
 }
 
-#page-ideas nav li:last-child a {
-  /* aqui a cor está acessando o child direto sem ter conflito com o pai*/
-  color: #ff5e84;
-  height: 40px;
-  width: 150px;
-  text-decoration: none;
-  background-color: #0984e3;
-
-  background: #ff5e84;
-  color: white;
-  width: 150px;
-  height: 40px;
-  border-radius: 6px; /*60 0; arredondamento*/
-  box-shadow: 0px 8px 16px #ff5e8432;
-
-  font-size: 14px;
-  font-weight: bold;
-
-  border-radius: 8px;
-  display: flex;
-  background-color: #ff5e84;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  background: #ff5e84;
-  color: white;
-  width: 150px;
-  height: 40px;
-  border-radius: 6px; /*60 0; arredondamento*/
-  box-shadow: 0px 8px 16px #ff5e8432;
-
-  font-size: 14px;
-  font-weight: bold;
-
-  border-radius: 8px;
-  display: flex;
-  background-color: #ff5e84;
-  align-items: center;
-  justify-content: center;
-}
-.buton:hover {
-  text-decoration: none;
-  background-color: #0984e3;
-}
-
-#page-ideas nav li:last-child a:hover {
-  text-decoration: none;
-}
 section#title {
   text-align: center;
-  /*margin-top: 64px 0;*/
 }
 
 section#title p {
   opacity: 0.7;
   margin: 0;
 }
+
 section#title h1 {
   margin: 0;
   font-size: 28px;
@@ -327,16 +275,15 @@ section#title h1 {
 section#ideas {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  gap: 29px;
+  gap: 20px;
 }
 
 section#ideas .idea {
   margin: 0;
 }
-/*agrupamento*/
-section#ideas,
+
 section#title,
+section#ideas,
 footer {
   margin-top: 64px;
 }
