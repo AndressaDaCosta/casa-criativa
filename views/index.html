@@ -1,52 +1,41 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
 
-{% block content %}
+<section id="intro">
+  <header>
+    <a href="/">
+      <img src="/img/logo.png" alt="logo Casa Criativa" />
+    </a>
+  </header>
 
-      <section id="intro">
-        <header>
-          <a href="/">
-          <img src="/img/logo.png" alt="logo Casa Criativa" />
-        </a>
-        </header>
+  <!--Conteudo principal -->
+  <main>
+    <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
 
-        <!--Conteudo principal -->
-        <main>
-          <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+    <p>
+      Por isso iremos catalogar ideias,
+      <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong>
+      e tudo que for necessário para tornar esse momento mais interessante.
+    </p>
 
-          <p>
-            Por isso iremos catalogar ideias,
-            <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong>
-            e tudo que for necessário para tornar esse momento mais
-            interessante.
-          </p>
+    <p>
+      Começe clicando em ver ideias para ver as ideias cadastradas e contribua
+      adicionando suas ideias.
+    </p>
+  </main>
 
-          <p>
-            Começe clicando em ver ideias para ver as ideias cadastradas e
-            contribua adicionando suas ideias.
-          </p>
-        </main>
+  <section id="buttons">
+    <button href="/" onclick="onOff()">+ Adicionar ideia</button>
+    <a href="/ideias" class="button"> Ver ideias </a>
+  </section>
 
-        <section id="buttons">
-          <button onclick="onOff()">
-          + Adicionar ideia
-          </button>
-          <a href="/ideias" class="button">
-            Ver ideias
-          </a>
-        </section>
+  <footer>
+    Com 💖
+    <a href="https://www.linkedin.com/in/andressa-da-costa/" target="blank"
+      >Andressa Costa
+    </a>
+  </footer>
+</section>
 
-        <footer>
-          Com <span💖></span>
-          <a
-            href="https://www.linkedin.com/in/andressa-da-costa/"
-            target="blank"
-            >Andressa Costa WEB Developer</a
-          >
-        </footer>
-      </section>
+<section id="last-ideas">{% include "all-ideas.html" %}</section>
 
-      <section id="last-ideas">
-        {% include "allideas.html" %}
-      </section>
-    
-      {% endblock %}
+{% endblock %}
