@@ -48,9 +48,9 @@ Acesse a aplicação via **localhost:3000**
 
 ### Telas
 
-![](img/home.png)
-![](img/cadastro.png)
-![](img/ideias.png)
+![](public/img/home.png)
+![](public/img/cadastro.png)
+![](public/img/ideias.png)
 
 
 ---
