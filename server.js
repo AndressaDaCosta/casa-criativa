@@ -57,7 +57,7 @@ server.use(express.urlencoded({ extended: true }))
 const nunjucks = require('nunjucks')
 nunjucks.configure('views', {
   express: server,
-  noCache: true //boolean  //
+  noCache: true //boolean
 })
 
 server.get('/', function (req, res) {
