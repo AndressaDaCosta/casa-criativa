@@ -55,7 +55,7 @@ Acesse a aplicação via **localhost:3000**
 
 ---
 
-**&copy; <img src="img/rocketseat.svg" alt="rocketseat" height="20"> [Rocketseat](https://rocketseat.com.br/)**
+**&copy; <img src="public/img/rocketseat.svg" height="20"> [Rocketseat](https://rocketseat.com.br/)**
 
 **Instrutor: [Mayk Brito](https://github.com/maykbrito)**
 
